@@ -1,0 +1,52 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<style>
+		body {
+			margin: 20px;
+		}
+	</style>
+</head>
+
+<body ng-app="">
+	<div class="container" ng-controller="">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading">My Shopping List</div>
+					<div class="panel-body">
+						<div ng-repeat="item in items track by $index">
+							<button type="button" class="btn btn-link" ng-click=""><i class="fa fa-times"></i></button>
+							<span>{{ item }}</span>
+						</div>
+					</div>
+					<div class="panel-footer">
+						<form class="form-inline">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Add items here" ng-model="">
+							</div>
+							<button type="button" class="btn btn-primary" ng-click="">Add</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script>
+
+		// Create an Angular module
+
+		// Create an Angular controller
+
+	</script>
+</body>
+
+</html>
